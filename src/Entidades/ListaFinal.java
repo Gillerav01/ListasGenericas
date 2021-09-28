@@ -57,7 +57,7 @@ public class ListaFinal <T> {
         Nodo<T> aux = prim;
         System.out.println("\n" + "--------------------------");
         while (aux != null) {
-            System.out.print(aux.getInfo() + " ");
+            System.out.println(aux.getInfo() + " ");
             aux = aux.getSig();
         }
     }

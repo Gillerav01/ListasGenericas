@@ -1,5 +1,6 @@
 package Main;
 
+import Entidades.Iterador;
 import Entidades.ListaFinal;
 import Entidades.Persona;
 
@@ -15,10 +16,13 @@ public class Main {
         lf.add(Alex);
         lf.add(Nina);
         
-        lf.leer();
+//        lf.leer();
         
-        
-        
+        Iterador it = new Iterador(lf);
+        while (it.hasNext()) {
+            System.out.println(it.dameValor());
+            it.setActual(it.next());
+        }
     }
     
 }
